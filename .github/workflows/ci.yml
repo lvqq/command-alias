@@ -21,6 +21,9 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
+      
+      - name: Install
+        run: pnpm install
 
       - name: Lint
         run: pnpm run lint
@@ -37,6 +40,9 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
+
+      - name: Install
+        run: pnpm install
 
       - name: Typecheck
         run: pnpm run typecheck
@@ -62,6 +68,9 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
+
+      - name: Install
+        run: pnpm install
 
       - name: Build
         run: pnpm run test:ci
