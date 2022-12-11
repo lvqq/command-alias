@@ -1,0 +1,93 @@
+// Vitest Snapshot v1
+
+exports[`generateCommandAliasByPlugin() > generate alias from json 1`] = `
+"# part1
+alias sa='short alias'
+
+# part2
+alias saa='short alias with optionA'
+alias sab='short alias with optionB'
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias from json 2`] = `
+"@echo off
+
+@REM part1
+doskey sa=short alias $*
+
+@REM part2
+doskey saa=short alias with optionA $*
+doskey sab=short alias with optionB $*
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias from json 3`] = `
+"@echo off
+
+# part1
+function sa {
+  short alias $args
+}
+
+# part2
+function saa {
+  short alias with optionA $args
+}
+
+function sab {
+  short alias with optionB $args
+}
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias from yaml 1`] = `
+"# part1
+alias sa='short alias'
+
+# part2
+alias saa='short alias with optionA'
+alias sab='short alias with optionB'
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias from yaml 2`] = `
+"@echo off
+
+@REM part1
+doskey sa=short alias $*
+
+@REM part2
+doskey saa=short alias with optionA $*
+doskey sab=short alias with optionB $*
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias from yaml 3`] = `
+"@echo off
+
+# part1
+function sa {
+  short alias $args
+}
+
+# part2
+function saa {
+  short alias with optionA $args
+}
+
+function sab {
+  short alias with optionB $args
+}
+"
+`;
+
+exports[`generateCommandAliasByPlugin() > generate alias with specified plugin 1`] = `
+"# part1
+alias sa='short alias'
+
+# part2
+alias saa='short alias with optionA'
+alias sab='short alias with optionB'
+"
+`;

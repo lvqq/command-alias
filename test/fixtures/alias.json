@@ -1,0 +1,9 @@
+{
+  "part1": {
+    "sa": "short alias"
+  },
+  "part2": {
+    "saa": "short alias with optionA",
+    "sab": "short alias with optionB"
+  }
+}
