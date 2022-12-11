@@ -23,7 +23,7 @@ doskey sab=short alias with optionB $*
 `;
 
 exports[`generateCommandAliasByPlugin() > generate alias from json 3`] = `
-"@echo off
+"#!/usr/bin/env pwsh
 
 # part1
 function sa {
@@ -64,7 +64,7 @@ doskey sab=short alias with optionB $*
 `;
 
 exports[`generateCommandAliasByPlugin() > generate alias from yaml 3`] = `
-"@echo off
+"#!/usr/bin/env pwsh
 
 # part1
 function sa {

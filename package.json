@@ -22,6 +22,7 @@
     "prepublishOnly": "pnpm build",
     "typecheck": "tsc",
     "test": "vitest run",
+    "test:up": "vitest --update",
     "test:ci": "vitest run --coverage",
     "lint": "eslint --fix --quiet --ext .ts src",
     "prepare": "husky install",
