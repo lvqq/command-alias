@@ -18,7 +18,7 @@ class Ps1Plugin extends Plugin {
           })
           .join('\n\n')}`
     );
-    return `@echo off\n\n${aliaGroups.join('\n\n')}\n`;
+    return `#!/usr/bin/env pwsh\n\n${aliaGroups.join('\n\n')}\n`;
   }
 }
 

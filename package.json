@@ -13,14 +13,19 @@
       "require": "./dist/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "rimraf dist && tsup --sourcemap inline --watch",
     "build": "rimraf dist && tsup --treeshake --minify",
+    "prepublishOnly": "pnpm build",
     "typecheck": "tsc",
     "test": "vitest run",
     "test:ci": "vitest run --coverage",
     "lint": "eslint --fix --quiet --ext .ts src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "changelog": "conventional-changelog -p angular -i ./CHANGELOG.md -s --commit-path ./"
   },
   "engines": {
     "node": "^14.13.0 || >=16.0.0"
@@ -32,6 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
     "@vitest/coverage-c8": "^0.25.7",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
