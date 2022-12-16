@@ -1,6 +1,6 @@
 # command-alias
 
-[![npm version](https://img.shields.io/npm/v/@x-toolkit/command-alias.svg)](https://www.npmjs.com/package/@x-tookit/command-alias) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/x-toolkit/command-alias/CI) [![Coverage Status](https://coveralls.io/repos/github/x-toolkit/command-alias/badge.svg?branch=main)](https://coveralls.io/github/x-toolkit/command-alias?branch=main) ![GitHub](https://img.shields.io/github/license/lvqq/cap)
+[![npm version](https://img.shields.io/npm/v/@x-toolkit/command-alias.svg)](https://www.npmjs.com/package/@x-toolkit/command-alias) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/x-toolkit/command-alias/ci.yml?branch=main) [![Coverage Status](https://coveralls.io/repos/github/x-toolkit/command-alias/badge.svg?branch=main)](https://coveralls.io/github/x-toolkit/command-alias?branch=main) ![GitHub](https://img.shields.io/github/license/lvqq/cap)
 
 Generate alias for different command system, support `zsh/bash` and `Windows Command/PowerShell`.
 
@@ -42,13 +42,26 @@ type Options = {
 #### source
 Alias config filepath, support `json/yaml` format.
 
-Source file yaml [example](https://github.com/x-toolkit/command-alias/blob/main/test/fixtures/alias.yaml):
+- source file yaml [example](https://github.com/x-toolkit/command-alias/blob/main/test/fixtures/alias.yaml):
 ```yaml
 part1:
   sa: short alias
 part2:
   saa: short alias with optionA
   sab: short alias with optionB
+```
+
+- source file json [example](https://github.com/x-toolkit/command-alias/blob/main/test/fixtures/alias.json):
+```json
+{
+  "part1": {
+    "sa": "short alias"
+  },
+  "part2": {
+    "saa": "short alias with optionA",
+    "sab": "short alias with optionB"
+  }
+}
 ```
 
 #### outDir

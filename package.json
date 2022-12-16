@@ -16,6 +16,14 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "keywords": [
+    "bash",
+    "zsh",
+    "powershell",
+    "alias",
+    "windows-command"
+  ],
   "scripts": {
     "dev": "rimraf dist && tsup --sourcemap inline --watch",
     "build": "rimraf dist && tsup --treeshake --minify",
