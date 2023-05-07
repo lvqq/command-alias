@@ -1,5 +1,5 @@
 {
-  "name": "@x-toolkit/command-alias",
+  "name": "command-alias",
   "version": "0.1.0",
   "description": "",
   "type": "module",
@@ -32,14 +32,15 @@
     "test": "vitest run",
     "test:up": "vitest --update",
     "test:ci": "vitest run --coverage",
-    "lint": "eslint --fix --quiet --ext .ts src",
+    "lint": "eslint --quiet --ext .ts .",
     "prepare": "husky install",
     "changelog": "conventional-changelog -p angular -i ./CHANGELOG.md -s --commit-path ./"
   },
   "engines": {
-    "node": "^14.13.0 || >=16.0.0"
+    "node": "^14.13.0 || >=16.0.0",
+    "pnpm": ">=7.29.0 <8"
   },
-  "packageManager": "pnpm@7.18.1",
+  "packageManager": "pnpm@7.29.3",
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
     "@types/node": "^18.11.13",

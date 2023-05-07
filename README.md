@@ -1,6 +1,6 @@
 # command-alias
 
-[![npm version](https://img.shields.io/npm/v/@x-toolkit/command-alias.svg)](https://www.npmjs.com/package/@x-toolkit/command-alias) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/x-toolkit/command-alias/ci.yml?branch=main) [![Coverage Status](https://coveralls.io/repos/github/x-toolkit/command-alias/badge.svg?branch=main)](https://coveralls.io/github/x-toolkit/command-alias?branch=main) ![GitHub](https://img.shields.io/github/license/lvqq/cap)
+[![npm version](https://img.shields.io/npm/v/command-alias.svg)](https://www.npmjs.com/package/command-alias) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lvqq/command-alias/ci.yml?branch=main) [![Coverage Status](https://coveralls.io/repos/github/lvqq/command-alias/badge.svg?branch=main)](https://coveralls.io/github/lvqq/command-alias?branch=main) ![GitHub](https://img.shields.io/github/license/lvqq/command-alias)
 
 Generate alias for different command system, support `zsh/bash` and `Windows Command/PowerShell`.
 
@@ -8,21 +8,21 @@ Generate alias for different command system, support `zsh/bash` and `Windows Com
 ### Installation
 ```bash
 # npm
-npm install @x-toolkit/command-alias --save-dev
+npm install command-alias --save-dev
 
 # yarn
-yarn add @x-toolkit/command-alias --dev
+yarn add command-alias --dev
 
 # pnpm 
-pnpm add @x-toolkit/command-alias --save-dev
+pnpm add command-alias --save-dev
 ```
 
 ### Api
 Using the following api will generate a few alias file under output directory throught `alias.yaml`:
 ```typescript
-import { generateCommandAliasByPlugin } from '@x-toolkit/command-alias'
+import { transform } from 'command-alias'
 
-generateCommandAliasByPlugin('alias.yaml', 'output')
+transform('alias.yaml', 'output')
 ```
 
 

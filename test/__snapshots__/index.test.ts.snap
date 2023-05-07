@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`generateCommandAliasByPlugin() > generate alias from json 1`] = `
+exports[`transform() > generate alias from json 1`] = `
 "# part1
 alias sa='short alias'
 
@@ -10,7 +10,7 @@ alias sab='short alias with optionB'
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias from json 2`] = `
+exports[`transform() > generate alias from json 2`] = `
 "@echo off
 
 @REM part1
@@ -22,7 +22,7 @@ doskey sab=short alias with optionB $*
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias from json 3`] = `
+exports[`transform() > generate alias from json 3`] = `
 "#!/usr/bin/env pwsh
 
 # part1
@@ -41,7 +41,7 @@ function sab {
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias from yaml 1`] = `
+exports[`transform() > generate alias from yaml 1`] = `
 "# part1
 alias sa='short alias'
 
@@ -51,7 +51,7 @@ alias sab='short alias with optionB'
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias from yaml 2`] = `
+exports[`transform() > generate alias from yaml 2`] = `
 "@echo off
 
 @REM part1
@@ -63,7 +63,7 @@ doskey sab=short alias with optionB $*
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias from yaml 3`] = `
+exports[`transform() > generate alias from yaml 3`] = `
 "#!/usr/bin/env pwsh
 
 # part1
@@ -82,7 +82,7 @@ function sab {
 "
 `;
 
-exports[`generateCommandAliasByPlugin() > generate alias with specified plugin 1`] = `
+exports[`transform() > generate alias with specified plugin 1`] = `
 "# part1
 alias sa='short alias'
 

@@ -10,7 +10,7 @@ interface Options {
   plugins?: string[];
 }
 
-export const generateCommandAliasByPlugin = async (
+export const transform = async (
   source: string,
   outDir: string,
   options?: Options
